@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "fastapi-realworld"
+version = "0.1.0"
+description = ""
+authors = ["sergey <saalaus@mail.ru>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.82.0"
+uvicorn = {extras = ["standard"], version = "^0.18.3"}
+pydantic = {extras = ["email"], version = "^1.10.2"}
+PyJWT = "^2.4.0"
+python-multipart = "^0.0.5"
+SQLAlchemy = "^1.4.41"
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+requests = "^2.28.1"
+sqlalchemy-stubs = "^0.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
